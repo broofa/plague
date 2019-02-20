@@ -1,0 +1,70 @@
+html {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 10pt;
+}
+
+#console {
+  position: fixed;
+  right: 0;
+  padding: 10px;
+  top: 0;
+  bottom: 0;
+  width: 275px;
+  border-left: solid 1px black;
+  background: white;
+}
+
+#console table {margin: 0;}
+#console table th {font-weight: bold; text-align: right; vertical-align: top;}
+
+h3 {
+  text-align: center;
+  margin: 10px 0px 5px;
+}
+
+#board {
+  image-rendering: pixelated;
+}
+
+label {
+  display: block;
+  margin: 5px 0px;
+}
+
+label span {
+  display: inline-block;
+  width: 150px;
+  font-size: 80%;
+  font-family:monospace;
+}
+
+input[type="range"] {
+  width: 100px;
+}
+
+canvas#colors {display: none;}
+body.mode-all canvas#colors {display: block;}
+
+#vaccinate {display: block; width: 100%; margin: 5px 0;}
+#vaccinate:active {background-color: red;}
+
+#shield {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 100%;
+  background: rgba(255,255,255,.8);
+}
+
+html:focused #shield {
+  display: block;
+}
