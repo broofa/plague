@@ -132,7 +132,7 @@ function renderBoard() {
   for (let i = 0, j = 0, n = state.nCells; i < n; i++) {
     switch (viewMode) {
       case 0: {  // Show all properties
-        let imm = .3 + .67 * state[i].immune/128;
+        let imm = .1 + .9 * state[i].immune/128;
         const inf = state[i].infected ? 128 : 0;
         if (inf) imm /= 2;
         const color = HSB[state[i].code & 0xff];

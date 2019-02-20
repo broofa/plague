@@ -149,7 +149,6 @@ class Plague {
             const nn = nextState[n.i];
             nn.immune += IMMUNE_BOOST;
             if (nn.immune > 128) nn.immune = 128;
-            //nn.life = LIFE_MAX;
             nn.infected = true;
             nn.code = nn.code * .001 + last.code * .999;
 
