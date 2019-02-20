@@ -222,6 +222,7 @@ document.addEventListener('change', e => {
 function tick() {
   // Stop animating if we don't have focus so we don't burn CPU/battery
   // unnecessarily
+  $('#shield').classList.toggle('focus', document.hasFocus());
   if (!document.hasFocus() || frame >= maxFrame) {
     setTimeout(tick, .5);
     return;
